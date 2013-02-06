@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Games and Javascript: A Journey of Enlightenment</title>
+
+    <meta name="description" content="Games and Javascript: A Journey of Enlightenment">
+    <meta name="author" content="Oisin Hurley">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1>Games and Javascript</h1>
+          <h3>A Journey of Enlightenment</h3>
+          <p>
+            <small><a href="http://oisinh.wordpress.com">Ois&iacute;n Hurley</a> / <a href="http://twitter.com/oisin">@oisin</a></small>
+          </p>
+          <aside class="notes">
+            So this is a talk about Javascript and Games.
+
+            But I better let you all know that while I'll be picking through some Javascript Game Engines - and there are some beauties out there right now - this talk is mostly a story about a journey that ended up with Javascript and Games.      
+          </aside>
+        </section>
+
+        <section>
+          <h2>Wait, what?</h2>
+          <p>
+            <image src="images/narwhal.png">
+          </p>
+
+          <p>
+            but - ruby, objective-c, web services...?
+          </p>
+          
+          <aside class="notes">
+            Those of you that know me may have been mildly surprised to see me up here - since I spend my days writing Ruby mostly, some Objective-C and not a lot in the way of Javascript (it makes me leave semicolons everywhere). Also, I'm a middleware and serverside guy, with about as much design pzazz as, well, let's make it close to none and move on.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Journey's Start</h2>
+          <p>
+            <image src="images/noun_project_2401.svg">
+          </p>
+
+          <p>
+            programming. how does it work?
+          </p>
+
+          <aside class="notes">
+              A while back I managed to put aside software and alcohol for a bit and had a family. The resulting small humans are accelerating through time at a frightening pace and I want to give them the tools to kick ass as early as possible. The Art of Programming is, I humbly submit, one of those skills.
+
+              We'll get to the Javascript and Games in a little while, don't worry.
+
+              There's a saying "it's not fun until you are good at it, and you don't get good unless you practice". The piece of the puzzle that keeps you going through the non-fun times is motivation, curiousity, an urge to be different, perhaps even boredom.
+
+              I went back to my own motivations to see what I could re-construct in the present day.
+
+              I wasn't a sporty kid. I'm the eldest, and usually very happy with my own company. Being around people for long periods of time tires me out. Typical introvert. Messing with computers was pretty much perfect for me. 
+
+              The smaller humans I have at home are fiendish sports participants - rugby, gaelic football, hurling, olympic handball, basketball, swimming, karate. The love hanging out with their buddies. NOT ME AT ALL. Yikes.
+
+              At this point in time, however, they both have GitHub repos.
+
+              Let's talk about Python. And about CoderDojo.
+          </aside>
+        </section>
+
+        <section>
+          <section>
+            <h2>Making Games, #0 : Python</h2>
+            <p><image src="images/noun_project_9369.svg"></p>
+            <p>games are a common language for humans</p>
+            <aside class="notes">
+              I brought small human[0] to the CoderDojo in The Science Gallery. I actually had to supervise the release of hordes of plague-flea-infested rats in a number of South County Dublin suburbs so that I could get tickets. That's the kind of dedication parenthood can teach you.
+
+              In that CoderDojo, we did the monkey-see, monkey-do approach to programming - grab a working piece of code, and twitch it about, learning by your mistakes. NOT STRUCTURED. But just to show that YOU CAN CHANGE THINGS. You have power. With power comes confidence. We started off with a game. It was a text game with two caves, one of which has a dragon in. Small human[0] was unimpressed. So we added another dragon. But it was still text. So I downloaded pygame and researched frantically while small human[0] was put to work doing 8-bit art for sprite sheets. At the end of the session, we had an admittedly shite game with shite but personally hand-crafted graphics for achievement.
+
+              I was ready to smash everything in sight with hammers. My teeth were ground down to nubs. I am not patient.
+
+              But I had one level of motivation - making games. This shouldn't have been a surprise. That's exactly what I wanted to do too. And having visualized a game, I then learned how to make it. Back in that antediluvian period that meaned learning your local computer assembly language to do smooth bitwise screen scrolling. So you learned more, and found out how much more you could do.
+
+              That's Games. They are a language for humans.
+
+              While I was on the train home with small human[0], we designed an 8-bit 2D spritey game with a Rugby theme. And small human[0] uttered the fateful phrase "ok - how do I share my game with my friends?"
+
+              Getting his buddies to install Python wasn't going to work for this I'm afraid.
+
+              It turns out, though, that sharing the game was his strongest motivation.
+
+              Let's talk about iPhones. And about Cocos2D.
+            </aside>
+          </section>
+          <section>
+            <image src="images/dragongame.png">
+          </section>
+          <section>
+            <h2>Links</h2>
+            <ul>
+              <li><a href="http://www.pygame.org/wiki/tutorials">MANY Pygame Tutorials</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Making Games, #1 : iOS</h2>
+            <p><image src="images/noun_project_244.svg"> <image src="images/noun_project_244.svg"> <image src="images/noun_project_244.svg"></p>
+            <p>humans appear to have deep urge to increase social capital with sharing</p>
+            <aside class="notes">
+              iPhones and iPod touches are prevalent among the peers of small human[0]. The concept of 'app' is strong in this generation. That's a viable sharing vector, I thought, perhaps we can eke out some success on this platform.
+
+              So. It turns out Objective-C is not a good language to put in front of a child to learn. I would go so far as to say don't bother teaching a kid a compiled language. Teach them to program first, then attempt to destroy their souls later.
+            </aside>
+          </section>
+          <section>
+            <image src="images/cocos2d-tiled.jpg">
+            <image src="images/tastymelon.jpg">
+            <aside class="notes">
+              Given that, Cocos2D is pretty good for techniques - we learned tiled maps, we learned overlays and how to put in obstructions, how to produce pickups, different types of terrain, and got our 2D cartesian coordinates bedded in.
+
+              But the programming wasn't really kicking in. I despaired a little bit, since small human[0]was becoming more and more let down with the lack of results. 
+
+              Let's talk about Javascript.
+            </aside>
+          </section>
+          <section>
+            <h2>Links</h2>
+            <ul>
+              <li><a href="http://www.raywenderlich.com/25736/how-to-make-a-simple-iphone-game-with-cocos2d-2-x-tutorial">Simple Cocos2d Tutorial</a></li>
+              <li><a href="http://www.raywenderlich.com/1163/how-to-make-a-tile-based-game-with-cocos2d">Tile-based Cocos2d Game Tutorial</a></li>
+              <li><a href="http://www.raywenderlich.com/24155/how-to-make-a-side-scrolling-beat-em-up-game-like-scott-pilgrim-with-cocos2d-part-1">Side-scroller Cocos2d Game Tutorial</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>Making Games, #2 : Javascript</h2>
+          <p><image src="images/noun_project_8444.svg"></p>
+          <p>it's always in the last place you look for it</p>
+          <aside class="notes">
+            At this point, you may be asking yourselves why it took me so long to get here as Javascript is a totally obvious bloody solution that I should have done ages ago. It works in the browser, which is shareable. It can be embedded in phone, which is also shareable. Well. Two things for me I guess - lack of fluency in the language, and ignorance of the operation of the language in the browser were the bumps, plus being unable to ditch the prejudice I have that the DOM is the stupidest programming model ever.
+            
+            I started looking at Javascript Game engines. The first one that I got into any depth with was Impact.
+          </aside>
+        </section>
+
+        <section>
+          <section>
+            <h2>Impact.js</h2>
+            <p><image src="images/noun_project_2327.svg"></p>
+            <p>it's a hit with your audience and a hit to your wallet</p>
+            <aside class="notes">
+              You may be familiar with this one already. It's a for-pay item - $99. It's moderately straightforward to produce simple games. 
+
+              Downside to this is on the iOS devices - slow as der cucumber
+
+              But. There's a solution for that.
+            </aside>
+          </section>
+          <section>
+            <h3>biolab disaster</h3>
+            <p><image src="images/biolab-chrome.png"></p>
+          </section>  
+          <section>
+            <p><image src="images/impact-weltmeister.png"></p>
+          </section>          
+          <section>
+            <image src="images/headsteroids.png"></image>
+            <p>can't publish Impact code cos license</p>
+            <aside class="notes">
+              Here's an example with small human[1]'s head as an asteroid. This went down very well.
+            </aside>
+          </section>
+          <section>
+            <h2>Links</h2>
+            <ul>
+              <li><a href="http://impactjs.com/">Impact.js</a></li>
+              <li><a href="http://playbiolab.com/">http://playbiolab.com/</a></li>
+            </ul>
+            <br><br>
+            <div class="reveal attribution">
+              <p>Thanks to Andrey Gerasimov, from The Noun Project, for the hit icon</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Ejecta</h2>
+            <p><image src="images/noun_project_4253.svg"></p>
+            <p>all of the DOM you need and no more</p>
+            <aside class="notes">
+              Ejecta is like a Browser without the Browser. It's specially crafted for Games and Animations. It has no DIVs, no Tables, no Forms – only Canvas and Audio elements. This focus makes it faster.
+
+              JavaScript code is executed directly by a JavaScript VM (JavaScriptCore), the HTML5 Canvas API is implemented in native code with OpenGL, Audio is implemented with OpenAL. Several other APIs (touch, accelerometer, localStorage) behave like those in a real browser.
+            </aside>
+          </section>
+          <section>
+            <h2>Just a Container</h2>
+            <ul>
+              <li>works with CreateJS</li>
+              <li>works with Impact</li>
+              <li>works with Three.js</li>
+              <li>FAST!</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Links</h2>
+            <ul>
+              <li><a href="https://github.com/phoboslab/Ejecta">Github source</a></li>
+              <li><a href="http://impactjs.com/ejecta">Ejecta and Impact.js</a></li>
+              <li><a href="http://indie-indian.blogspot.ie/2012/11/ejectagl-webgl-on-ios-with-ejecta.html">WebGL on iOS with Ejecta</a></li>
+              <li><a href="http://www.createjs.com/">CreateJS</a></li>
+              <li><a href="http://mrdoob.github.com/three.js/">Three.js</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Three.js</h2>
+            <p><image src="images/noun_project_6207.svg"></p>
+            <p>level up to 3d</p>
+            <aside class="notes">
+              WOW.
+
+              Abstracts away the headaches of getting going with 3D in the browser. With it you can create cameras, objects, lights, materials and more, and you have a choice of renderer, which means you can decide if you want your scene to be drawn using HTML 5's canvas, WebGL or SVG.
+
+              This has turned out to be the sweet spot for small human[0..1]. Check out the examples here
+
+              oscar: wrapped a jpg around a sphere geometry
+                
+              tiernan: bouncing camera
+
+              This is totally the right thing for them - instant results. Shareable in browser. Canvas and WebGL renderers. The WebGL breaks my laptop.
+
+              Of course, given the internet, there are things that are built on this.
+
+              Let's talk about Voxels.
+            </aside>
+          </section>
+          <section>
+            <iframe src="examples/htmleditor/index.html" width="1200" height="600">
+            </iframe>
+            <aside class="notes">
+              So you should be seeing some HTML text here. This is an implementation of a Three.js icosahedron rotating on two axes. If you don't
+              see anything rotating with a reduced alpha, change the code, maybe introduce a space or something. A few seconds later, refresh should 
+              cause the graphic to appear.
+          </section>
+          <section>
+             <iframe width="1000" height="800" src="examples/tiernan/index.html"></iframe>
+             <aside class="notes">
+              All going well, you should see a red quadrilateral containing multiple cubes centered on the same point, with all but the smallest
+              cube implemented as a wireframe, and you should see the composite cube move nearer and further as the camera viewpoint changes.
+
+              Can take a few *minutes* to appear.
+             </aside>
+          </section>
+          <section>
+             <iframe width="1000" height="800" src="examples/cubes/index.html"></iframe>
+             <aside class="notes">
+              All going well, you should see a weird grey mutant view involving three cubes, two of which are orbiting the largest cube, with a Hello World text geometry and an orbit count with positioning tracker and controls legend at the top left.
+              
+              Can take a few *minutes* to appear.
+             </aside>
+          </section>
+          <section>
+            <h2>Links</h2>
+            <ul>
+              <li><a href="http://mrdoob.github.com/three.js/">Three.js</a></li>
+              <li><a href="http://asmallgame.com/labsopen/webgl_impact/">Three.js + Impact.js + Box2d</a></li>
+              <li><a href="http://www.arcsynthesis.org/gltut/">Learning Modern 3D Graphics Programming</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>voxel.js</h2>
+            <p><image src="images/noun_project_6887.svg"></p>
+            <p>make your own voxel worlds</p>
+            <aside class="notes">
+              ERMAHGERD.
+
+              voxel.js is a collection of projects that make it easier than ever to create 3D voxel games like Minecraft all in the browser.
+
+              It was written by @maxogden and @substack, two non-game developers that want to make voxel games easy, fun and modular. If you find bugs it is because we don't really know what we are doing. The good news is that 100% of the code is on Github so we hope you will fork it.
+
+              Ok so look at what these guys have built or caused to be built here. Motivation is all about free.
+              Sticks to the unixy principles of tiny tight focussed modules, which is a core factor of the node.js style of building systems. 
+
+              if humans[0..1] saw this, then they would just disappear into it :)
+            </aside>
+          </section>
+          <section>
+            <h2>Massively Modular Open Source</h2>
+            <ul>
+              <li>30 or so modules - terrain, drone, creature, player-physics, etc</li>
+            </ul>
+          </section>
+          <section>
+            <image src="images/voxel-terrain.gif">
+          </section>
+          <section>
+            <h2>Links</h2>
+            <ul>
+              <li><a href="http://voxeljs.com/">voxel.js</a></li>
+            </ul>
+            <br><br>
+            <p>That is all.</p>
+          </section>
+        </section>          
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

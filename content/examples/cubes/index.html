@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: #666;
+				margin: 0px;
+				overflow: hidden;
+			}
+			.linfo { 
+				position: relative; 
+				top: 10px; 
+				left: 60px;
+				width: 20%; 
+				text-align: left; 
+				z-index: 100; 
+				display:block; 
+				color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="linfo" id="orbit1"></div>
+		<div class="linfo" id="orbit2"></div>
+		<div class="linfo">
+		<br/><b>WASD</b> move, <b>R|F</b> up | down, <b>Q|E</b> roll, <b>up|down</b> pitch, <b>left|right</b> yaw<br/>
+		</div>
+		<div class="linfo" id="camera_x"></div>
+		<div class="linfo" id="camera_y"></div>
+		<div class="linfo" id="camera_z"></div>
+		<div id="container">
+		</div>
+		<script src="js/three.min.js"></script>
+		<script src="js/jquery-1.9.0.min.js"></script>
+		<script src="js/flycontrols.js"></script>
+		<script src="js/cubes.js"></script>
+	</body>
+</html>
