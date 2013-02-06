@@ -1,4 +1,6 @@
 {
+        "name" : "oisin-javascript-games",
+        "version" : "0.3.0",
 	"engines": {
 		"node": "~0.8.0"
 	},
